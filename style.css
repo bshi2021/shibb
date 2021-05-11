@@ -289,3 +289,13 @@ section img {
 tr td ul li {
     text-align: left;
 }
+
+.ul-memes {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-memes li {
+    list-style: none;
+}
