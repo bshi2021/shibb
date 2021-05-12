@@ -326,4 +326,8 @@ tr td ul li {
     .div-links a {
         margin: 10px 50px;
     }
+    table {
+        max-width: 750px;
+        margin: 0 auto;
+    }
 }
