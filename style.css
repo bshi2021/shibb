@@ -41,11 +41,6 @@ body {
     background: linear-gradient(to bottom, rgba(9, 9, 43, 0.9) 0%, rgba(9, 9, 43, 0.9) 100%), url("images/shibass_bg.png");
 }
 
-main {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
-
 body::-webkit-scrollbar {
     width: 0.25rem;
 }
@@ -179,29 +174,6 @@ main {
     }
 }
 
-
-/* Large screens */
-
-@media only screen and (min-width: 600px) {
-    .navbar {
-        top: 0;
-        width: 4rem;
-        height: 100vh;
-    }
-    .navbar:hover {
-        width: 14rem;
-    }
-    .navbar:hover .link-text {
-        display: inline;
-    }
-    .navbar:hover .logo i {
-        margin-left: 11rem;
-    }
-    .navbar:hover .logo-text {
-        left: 0px;
-    }
-}
-
 img {
     width: 75%;
 }
@@ -298,4 +270,60 @@ tr td ul li {
 
 .ul-memes li {
     list-style: none;
+}
+
+.contact-us-icons {
+    color: #eee;
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 600px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    img {
+        max-width: 200px;
+    }
+    .navbar {
+        position: fixed;
+        left: 0px;
+        top: 0;
+        width: 4rem;
+        height: 100vh;
+    }
+    .navbar:hover {
+        width: 14rem;
+    }
+    .navbar:hover .link-text {
+        display: inline;
+    }
+    .navbar:hover .logo i {
+        margin-left: 11rem;
+    }
+    .navbar:hover .logo-text {
+        left: 0px;
+    }
+    .heading_wrapper {
+        display: inline-flex;
+        height: 200px;
+    }
+    .heading_wrapper img {
+        height: 200px;
+        width: 200px;
+    }
+    .btn-link {
+        width: 300px;
+    }
+    .ul-memes {
+        display: inline-flex;
+    }
+    .div-links {
+        display: inline-flex;
+    }
+    .div-links a {
+        margin: 10px 50px;
+    }
 }
