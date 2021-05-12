@@ -304,7 +304,7 @@ tr td ul li {
         margin-left: 11rem;
     }
     .navbar:hover .logo-text {
-        left: 0px;
+        left: 20px;
     }
     .heading_wrapper {
         display: inline-flex;
