@@ -30,6 +30,7 @@ h1 {
 html,
 body {
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
