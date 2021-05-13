@@ -157,15 +157,20 @@ main {
 @media only screen and (max-width: 600px) {
     .navbar {
         bottom: 0;
-        width: 100%;
+        width: 100vw;
         height: 5rem;
     }
     .logo {
         display: none;
     }
     .navbar-nav {
-        justify-content: space-around;
         flex-direction: row;
+        justify-content: baseline;
+        overflow: scroll;
+        left: 0;
+    }
+    .nav-link {
+        justify-content: center;
     }
     main {
         margin: 0;
@@ -177,7 +182,7 @@ img {
 }
 
 i {
-    width: 100px;
+    width: 100%;
 }
 
 table {
@@ -272,6 +277,14 @@ tr td ul li {
 
 .contact-us-icons {
     color: #eee;
+}
+
+div#contact-us a {
+    display: inline-block;
+}
+
+div#contact-us i {
+    width: 70px;
 }
 
 
