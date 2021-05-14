@@ -288,6 +288,42 @@ div#contact-us i {
     width: 70px;
 }
 
+.language-content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 15;
+    width: 200px;
+    height: 250px;
+    top: 30%;
+    margin: 0 auto;
+    background-color: var(--bg-primary);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.language-content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#click {
+    display: none;
+}
+
+#click:checked~.language-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 
 /* Large screens */
 
