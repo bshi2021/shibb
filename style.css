@@ -27,6 +27,10 @@ h1 {
     font-family: 'Knewave', cursive;
 }
 
+.navbar-nav::-webkit-scrollbar {
+    display: none;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -105,14 +109,6 @@ main {
     width: 2rem;
     min-width: 2rem;
     margin: 0 1rem;
-}
-
-.fa-primary {
-    color: #ff7eee;
-}
-
-.fa-secondary {
-    color: #df49a6;
 }
 
 .fa-primary,
@@ -302,12 +298,24 @@ div#contact-us i {
     background-color: var(--bg-primary);
     opacity: 0;
     visibility: hidden;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 12px 12px 12px 0 rgba(0, 0, 0, 0.4);
 }
 
 .language-content ul {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.language-content ul li {
+    margin: 10px;
+}
+
+.language-tab-closebtn {
+    position: relative;
+    margin: 30px;
 }
 
 #click {
@@ -327,7 +335,7 @@ a {
 
 /* Large screens */
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 601px) {
     body {
         max-width: 1200px;
         margin: 0 auto;
